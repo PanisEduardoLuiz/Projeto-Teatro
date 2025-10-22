@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Verifica se o link do tema existe na página antes de tentar usá-lo
         if (themeLink) {
             themeLink.href = `tema/${theme}-theme.css`;
+            
         }
         if (themeSwitcher) {
             themeSwitcher.checked = (theme === 'light');
