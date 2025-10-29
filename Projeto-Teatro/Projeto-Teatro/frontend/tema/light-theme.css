@@ -1,0 +1,15 @@
+/* themes/light-theme.css */
+
+:root {
+    --primary-color: #FF8C00; /* Laranja mais escuro para melhor contraste no claro */
+    --primary-hover-color: #e07b00;
+    
+    --bg-color: #f4f4f9; /* Fundo principal (cinza muito claro) */
+    --container-bg-color: #ffffff; /* Fundo dos formulários (branco) */
+    
+    --text-color: #333333; /* Cor do texto principal (cinza escuro) */
+    --input-bg-color: #f0f0f0; /* Fundo dos campos de input */
+    
+    --border-color: #ddd; /* Cor da borda dos inputs (cinza claro) */
+    --shadow-color: rgba(0, 0, 0, 0.1); /* Sombra suave sob o formulário */
+}

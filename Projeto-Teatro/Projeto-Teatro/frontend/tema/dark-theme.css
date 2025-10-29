@@ -1,0 +1,15 @@
+/* themes/dark-theme.css */
+
+:root {
+    --primary-color: #FFA500; /* Laranja vibrante */
+    --primary-hover-color: #e69500; /* Laranja um pouco mais escuro para hover */
+    
+    --bg-color: #121212; /* Fundo principal (preto) */
+    --container-bg-color: #1e1e1e; /* Fundo dos formulários (cinza bem escuro) */
+    
+    --text-color: #e0e0e0; /* Cor do texto principal (cinza claro) */
+    --input-bg-color: #2a2a2a; /* Fundo dos campos de input */
+    
+    --border-color: #444; /* Cor da borda dos inputs */
+    --shadow-color: rgba(0, 0, 0, 0.5); /* Sombra sob o formulário */
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Inscrições</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/frontend/tema/dark-theme.css" id="theme-link">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <h2 class="logo">Sistema de Eventos</h2>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="eventos.html">Eventos Disponíveis</a></li>
+                    <li><a href="minhas_inscricoes.html" class="active">Minhas Inscrições</a></li>
+                    <li><a href="index.html">Sair</a></li>
+                </ul>
+            </nav>
+            <div class="theme-switcher-container">
+                <label class="switch"><input type="checkbox" id="theme-switcher"><span class="slider round"></span></label>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Minhas Inscrições</h1>
+        <ul id="my-inscriptions-list" class="event-list">
+            </ul>
+    </main>
+
+    <div id="checkin-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <form id="cpf-checkin-form">
+                <h2>Confirmar Presença</h2>
+                <h3 id="checkin-modal-event-name">Nome do Evento</h3>
+                <p>Para confirmar sua presença (check-in), por favor, digite seu CPF.</p>
+                <div class="input-group">
+                    <input type="text" id="checkin-cpf-input" placeholder="Digite seu CPF (000.000.000-00)" required>
+                </div>
+                <button type="submit" class="checkin-btn">Fazer Check-in</button>
+                <p id="checkin-error-msg" class="search-message" style="color: #dc3545; margin-top: 15px;"></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Disponíveis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/frontend/tema/dark-theme.css" id="theme-link">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <h2 class="logo">Sistema de Eventos</h2>
+            
+         <nav class="main-nav">
+                <ul>
+                    
+                    <li id="user-greeting" class="hidden" style="color: var(--primary-color); font-weight: 600;"></li>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li id="minhas-inscricoes-link" class="hidden"><a href="minhas_inscricoes.html">Minhas Inscrições</a></li>
+                    <li id="login-link"><a href="#" id="open-login-modal-btn">Entrar</a></li>
+                    <li id="logout-link" class="hidden"><a href="#">Sair</a></li>
+                </ul>
+            </nav>
+
+            <div class="theme-switcher-container">
+                <label class="switch">
+                    <input type="checkbox" id="theme-switcher">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Eventos Disponíveis</h1>
+        <ul class="event-list">
+            <li class="event-card">
+                <h3>Palestra de Tecnologia Quântica</h3>
+                <p>Data: 25 de Outubro de 2025</p>
+                <p><strong>Horário: 19:00 - 22:00</strong></p>
+                <p>Palestrante: Dr. Hélio Silva</p>
+                <button class="subscribe-btn" data-event-name="Palestra de Tecnologia Quântica">Inscrever-se</button>
+            </li>
+            <li class="event-card">
+                <h3>Workshop de Java Avançado</h3>
+                <p>Data: 15 de Novembro de 2025</p>
+                <p><strong>Horário: 19:00 - 16:00</strong></p>
+                <p>Instrutor: Ana Pereira</p>
+                <button class="subscribe-btn" data-event-name="Workshop de Java Avançado">Inscrever-se</button>
+            </li>
+            <li class="event-card">
+                <h3>Feira de Inovação e Startups</h3>
+                <p>Data: 05 de Dezembro de 2025</p>
+                <p><strong>Horário: 18:00 - 20:00</strong></p>
+                <p>Local: Centro de Convenções</p>
+                <button class="subscribe-btn" data-event-name="Feira de Inovação e Startups">Inscrever-se</button>
+            </li>
+        </ul>
+    </main>
+
+    <div id="login-modal" class="modal-overlay hidden">
+        <div class="modal-content form-container">
+            <span class="close-modal login-close-modal">&times;</span>
+            <form action="#" id="login-form">
+                <h1>Entrar</h1>
+                <div class="input-group">
+                    <input type="email" id="login-email" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="login-password" placeholder="Senha" required>
+                </div>
+                <a href="#">Esqueceu sua senha?</a>
+                <button type="submit">Entrar</button>
+                <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+            </form>
+        </div>
+    </div>
+    
+    <div id="registration-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <form id="checkin-form">
+                <h2>Inscrição</h2>
+                <h3 id="modal-event-name">Nome do Evento</h3>
+                <p>Preencha seus dados para confirmar a inscrição.</p>
+                <div class="input-group">
+                    <input type="text" id="checkin-name" placeholder="Seu Nome Completo" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="checkin-cpf" placeholder="Seu CPF" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="checkin-email" placeholder="Seu Email" required>
+                </div>
+                <button type="submit">Confirmar Inscrição</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
